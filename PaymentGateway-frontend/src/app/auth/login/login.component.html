@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6 p-0 m-0">
+            <div class="back-img">
+                <div class="front-img"></div>
+            </div>
+        </div>
+        <div class="col-6 d-flex align-items-center" id = "hola">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="login-form-container">
+                    <form [formGroup]="loginform" (submit)="saveForm()" class="p-4 border rounded bg-dark text-light shadow-lg">
+                        <h2 class="mb-3 text-center">Login</h2>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Enter your email address</label>
+                            <input type="email" class="form-control" minLength="3" formControlName="email" id="email" placeholder="Enter Email">
+                            <div *ngIf="getControl('email')?.errors && getControl('email')?.touched">
+                                <small class="text-danger" *ngIf="getControl('email')?.errors?.['required']">Email is required</small>
+                                <small class="text-danger" *ngIf="getControl('email')?.errors?.['email']">Invalid Email</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Enter your password</label>
+                            <div class="pass">
+                                <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password" [type]="showPassword ? 'text' : 'password'">
+                                <span class="password-toggle-icon position-absolute"
+                                (click)="togglePasswordVisibility()">
+                                <i class="fas fa-eye" *ngIf="!showPassword"></i>
+                                <i class="fas fa-eye-slash" *ngIf="showPassword"></i>
+                            </span>
+                            </div>
+                            <div *ngIf="getControl('password')?.errors && getControl('password')?.touched">
+                                <small class="text-danger" *ngIf="getControl('password')?.errors?.['required']">Password is required.</small>
+                            </div>
+                        </div>
+                        <button class="mb-5 btn btn-danger w-100" type="submit">Login</button>
+                        <div class="btns text-center">
+                            <div id="g_id_onload" data-client_id="447038926527-dtt81afop239tds5vetdol8femost6e7.apps.googleusercontent.com" data-context="signin" data-ux_mode="popup" data-login_uri="" data-auto_prompt="false"></div>
+                            <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="signin_with" data-size="large" data-logo_alignment="left"></div>
+                            <button class="facebook-login-button btn btn-outline-light w-100 mt-3" (click)="loadFacebookSDK()">
+                                <img src="../../../assets/images/fblogo.png" alt="Facebook Logo" class="facebook-logo">
+                                <span>Login with Facebook</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

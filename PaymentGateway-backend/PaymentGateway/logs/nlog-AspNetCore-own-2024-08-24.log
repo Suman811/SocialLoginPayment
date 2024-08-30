@@ -1,0 +1,10 @@
+2024-08-24 17:31:28.4598|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN63DBD3LDT3" received FIN. 
+2024-08-24 17:31:28.4598|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN63DBD3LDT4" received FIN. 
+2024-08-24 17:31:28.4927|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN63DBD3LDT4" is closed. The last processed stream ID was 7. 
+2024-08-24 17:31:28.4927|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN63DBD3LDT3" is closed. The last processed stream ID was 7. 
+2024-08-24 17:31:28.4927|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN63DBD3LDT3" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-08-24 17:31:28.4927|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN63DBD3LDT4" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-08-24 17:31:28.4927|62|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HN63DBD3LDT4 completed. 
+2024-08-24 17:31:28.4927|62|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HN63DBD3LDT3 completed. 
+2024-08-24 17:31:28.5068|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN63DBD3LDT4" stopped. 
+2024-08-24 17:31:28.5068|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN63DBD3LDT3" stopped. 

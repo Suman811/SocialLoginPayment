@@ -1,0 +1,44 @@
+<!-- 
+  <div class="back">
+   <div class="success-container">
+    <div *ngIf="isSuccess; else failureTemplate">
+      <h2>Payment Successful!</h2>
+      <p>Your payment has been processed successfully.</p>
+      <p><strong>Transaction ID:</strong> {{ transactionId }}</p>
+    </div>
+  
+    <ng-template #failureTemplate>
+      <h2>Payment Failed</h2>
+      <p>Unfortunately, your payment could not be processed.</p>
+      <p><strong>Transaction ID:</strong> {{ transactionId }}</p>
+    </ng-template>
+  
+    <button (click)="goBackToHome()">Go Back to Home</button>
+  </div>
+</div> -->
+
+<div class="back">
+  <div class="success-container">
+    <div *ngIf="isSuccess; else failureTemplate">
+      <h2>Payment Successful!</h2>
+      <p>Your payment has been processed successfully.</p>
+      <p><strong>Transaction ID:</strong> {{ transactionId }}</p>
+      <button (click)="downloadInvoice()">Download Invoice</button>
+
+      <!-- HTML content to be included in the PDF -->
+      <div id="invoice-content" style="display: none;">
+        <h1>Invoice</h1>
+        <p><strong>Transaction ID:</strong> {{ transactionId }}</p>
+        <!-- More invoice details here -->
+      </div>
+    </div>
+
+    <ng-template #failureTemplate>
+      <h2>Payment Failed</h2>
+      <p>Unfortunately, your payment could not be processed.</p>
+      <p><strong>Transaction ID:</strong> {{ transactionId }}</p>
+    </ng-template>
+
+    <button (click)="goBackToHome()">Go Back to Home</button>
+  </div>
+</div>

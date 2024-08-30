@@ -1,0 +1,23 @@
+<div class ="main">You have choosen </div>
+<div class="payment-methods">
+    <h2>Select Payment Method</h2>
+    <div class="method-option">
+      <input type="radio" id="stripe" name="paymentMethod" value="stripe" [(ngModel)]="selectedMethod">
+      <label for="stripe">Stripe</label>
+    </div>
+    <div class="method-option">
+      <input type="radio" id="paypal" name="paymentMethod" value="paypal" [(ngModel)]="selectedMethod">
+      <label for="paypal">PayPal</label>
+    </div>
+  
+    <div *ngIf="selectedMethod === 'stripe'" class="stripe-info">
+      <p>You have selected Stripe. Please proceed with the Stripe payment process.</p>
+      <!-- Add Stripe payment integration here -->
+    </div>
+  
+    <div *ngIf="selectedMethod === 'paypal'" class="paypal-info">
+      <p>You have selected PayPal. Please proceed with the PayPal payment process.</p>
+      <!-- Add PayPal payment integration here -->
+    </div>
+  </div>
+  

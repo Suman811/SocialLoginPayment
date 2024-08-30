@@ -1,0 +1,34 @@
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .method-option {
+    margin: 10px 0;
+  }
+  
+  .method-option input {
+    margin-right: 10px;
+  }
+  
+  .stripe-info, .paypal-info {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .stripe-info {
+    border-color: #007bff;
+  }
+  
+  .paypal-info {
+    border-color: #009cde;
+  }
+  

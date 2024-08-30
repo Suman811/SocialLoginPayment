@@ -1,0 +1,90 @@
+
+
+
+.dashboard {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; /* Space out the plan cards */
+    align-items: center; /* Stretch the cards to the same height */
+    
+
+}
+
+.plan {
+    background: #f3f0ef;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Width of each plan card */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Space around each card */
+    
+}
+
+.plan h2 {
+    margin-top: 0;
+}
+
+.plan .price {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.plan ul li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #101a25;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.logout{
+    display:flex;
+    justify-content: center;
+}
+
+
+.comman{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(121, 15, 15);
+    //background-color: rgb(187, 149, 149);
+    //background-color: rgb(187, 117, 117);
+   // background-color: rgb(197, 135, 135) ;
+    //background-color: rgb(182, 80, 80);
+    //background-image: url("../../../assets/images/pipes.jpg");
+    //filter: brightness(5px);
+  
+}
+
+
+
+.header{
+    
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1 {
+    color: rgb(236, 229, 229);
+  
+}

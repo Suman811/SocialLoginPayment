@@ -1,0 +1,113 @@
+/* summary.component.scss */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #141414; 
+  padding: 20px;
+  color: #fff; 
+}
+
+.invoice-summary {
+  background-color: #333;  
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);  
+  max-width: 800px;
+  width: 100%;
+  border: 1px solid #555; 
+}
+
+h2 {
+  color: #dd0917;  
+  margin-top: 0;
+  font-size: 2.5rem; 
+  font-weight: bold;
+}
+
+p, ul {
+  margin: 15px 0;
+  color: #ddd;  
+  font-size: 1.2rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  background-color: #771419;  
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+      background-color: #b1121a; 
+  }
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #555; 
+  border-radius: 8px;
+  background-color: #333;  
+}
+
+.method-option {
+  margin: 10px 0;
+  color: #fff; 
+}
+
+.method-option input {
+  margin-right: 10px;
+}
+
+.stripe-info, .paypal-info {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #555;  
+  border-radius: 8px;
+  background-color: #444;  
+}
+
+.stripe-info {
+  border-color: #007bff; 
+}
+
+.paypal-info {
+  border-color: #009cde; 
+}
+
+.back-button {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #333;  
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+      background-color: #555;  
+  }
+}
+
+.payment-result {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #333;  
+  color: #fff;
+  text-align: center;
+}
